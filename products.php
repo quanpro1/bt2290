@@ -1,6 +1,9 @@
 <?php
 session_start();
-
+//kiem tra thong tin
+if(!isset($_SESSION['username'])){
+	header("Location: login.php");
+}
 $title = 'Product Page';
 include_once('layouts/header.php');
 require_once('db/dbhelper.php');
