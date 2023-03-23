@@ -1,5 +1,6 @@
 <?php
 session_start();
+// abc
 //kiem tra thong tin
 if(!isset($_SESSION['username'])){
 	header("Location: login.php");
